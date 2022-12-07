@@ -61,7 +61,7 @@
       <section class="section hero">
         <div class="container">
           <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-          <button type="button" class="hero-button" data-modal-open>
+          <button type="button" class="hero-button btn" data-modal-open>
             Замовити послугу
           </button>
         </div>
@@ -453,7 +453,7 @@
               placeholder="E-mail"
               class="subscribe-input"
             />
-            <button type="submit" class="subscribe-btn">
+            <button type="submit" class="subscribe-btn btn">
               Підписатися
               <svg class="subscribe-icon" width="24" height="24">
                 <use href="./images/sprite.svg#icon-iconsend"></use>
@@ -470,14 +470,12 @@
             <use href="./images/sprite.svg#icon-close-btn"></use>
           </svg>
         </button>
-        <form action="#" class="modal-form">
+        <form class="modal-form">
           <p class="modal-heading">Залиште свої дані, ми вам передзвонимо</p>
-
           <div class="input-field">
             <label class="label" for="name">Ім'я</label>
             <div class="input-wrapper">
               <input type="text" name="name" id="name" class="modal-input" />
-
               <svg class="input-icon" width="18" height="18">
                 <use href="./images/sprite.svg#icon-person"></use>
               </svg>
@@ -513,15 +511,18 @@
             ></textarea>
           </div>
           <div class="term-field">
-            <input type="checkbox" name="" id="terms" />
-            <label class="label-terms" for="terms"
-              >Погоджуюся з розсилкою та приймаю
-              <a href="#" class="terms-link">Умови договору</a>
+            <label class="label-terms" for="terms">
+              <input type="checkbox" name="" id="terms" class="checkbox" />
+              <span class="icon-check"></span>
+              <span>
+                Погоджуюся з розсилкою та приймаю
+                <a href="#" class="terms-link"> Умови договору</a>
+              </span>
             </label>
           </div>
-			 <div class="modal-submit-wrapper">
-          <button type="submit" class="modal-submit">Відправити</button>
-			 </div>
+          <div class="modal-submit-wrapper">
+            <button type="submit" class="modal-submit btn">Відправити</button>
+          </div>
         </form>
       </div>
     </div>
